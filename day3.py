@@ -10,6 +10,7 @@ for i in range(len(inpu)):
         inpu[i] = 0
 print(inpu)
 
+
 # 2
 inpu = [100, 200, 300, 400, 500]
 Compare_input =[500, 200, 400]
@@ -19,4 +20,3 @@ for i in range(len(inpu)):
     else:
         inpu[i] = 0
 print(inpu)
-
