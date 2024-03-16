@@ -46,3 +46,29 @@ for i in range(len(inpu)):
     
 output = {"highest_salary" : ma[0]["nama"], "total_salary" : total }
 print(output)
+
+# 6
+data_toko = {
+    "indomaret" : {
+        "ayam" : 30000,
+        "sayur" : 15000,
+        "buah" : 20000,
+        "ikan" : 22000
+    }
+}
+
+items_to_buy = {
+    "ayam" : 2,
+    "sayur" : 1,
+    "ikan" : 1
+}
+
+jumlah = []
+total = 0
+for i in data_toko["indomaret"]:
+    if i in items_to_buy:
+        jumlah.append({i : data_toko["indomaret"][i] * items_to_buy[i] })
+        total += data_toko["indomaret"][i] * items_to_buy[i]
+
+print(jumlah)
+print(total)
