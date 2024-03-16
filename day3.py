@@ -72,3 +72,39 @@ for i in data_toko["indomaret"]:
 
 print(jumlah)
 print(total)
+
+# 6
+inpu = {
+    "indomaret" : {
+        "ayam" : 30000,
+        "sayur" : 15000,
+        "buah" : 20000,
+        "ikan" : 22000,
+    },
+    "alfamart" : {
+        "ayam" : 25000,
+        "sayur" : 12000,
+        "buah" : 30000,
+        "ikan" : 25000
+    }
+}
+temp = []
+for i in inpu["indomaret"]:
+    if i in inpu["alfamart"]:
+        if inpu["indomaret"][i] < inpu["alfamart"][i]:
+            temp.append({ i : inpu["indomaret"][i]})
+        else :
+            temp.append({ i : inpu["alfamart"][i]})
+
+jumlah = []
+total = 0;
+
+for indeks, i in enumerate(inpu["indomaret"]) :
+    if i in items_to_buy:
+        jumlah.append({i : temp[indeks][i] * items_to_buy[i] })
+        total += temp[indeks][i] * items_to_buy[i]
+
+print(jumlah)
+print(total)
+
+# membandingkan harga yang paling murah
