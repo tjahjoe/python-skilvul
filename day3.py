@@ -36,3 +36,13 @@ for i in range(len(inpu)):
     elif terrendah["nilai"] > inpu[i]["nilai"]:
         terrendah = inpu[i]
 print(f"{tertinggi} \n {terrendah}")
+
+# 5
+inpu = [{"nama" : "Budi", "gaji" : 5000}, {"nama" : "Dwi", "gaji" : 8000}, {"nama" : "joko", "gaji" : 6000}]
+ma = sorted(inpu,key = lambda x : x["gaji"], reverse=True)
+total = 0
+for i in range(len(inpu)):
+    total = total + inpu[i]["gaji"]
+    
+output = {"highest_salary" : ma[0]["nama"], "total_salary" : total }
+print(output)
