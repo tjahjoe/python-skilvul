@@ -28,6 +28,8 @@ for indeks, i in enumerate(inpu):
 
 # 4
 inpu = [{"nama" : "Budi", "nilai" : 90}, {"nama" : "Dwi", "nilai" : 85}, {"nama" : "Tri", "nilai" : 75}]
+# first = list(inpu[0].keys())[0]
+# print(first) akses salahsatu key falue dengan
 tertinggi = inpu[0]
 terrendah = inpu[0]
 for i in range(len(inpu)):
@@ -45,7 +47,6 @@ for i in range(len(inpu)):
     total = total + inpu[i]["gaji"]
     
 output = {"highest_salary" : ma[0]["nama"], "total_salary" : total }
-print(output)
 
 # 6
 data_toko = {

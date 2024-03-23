@@ -50,6 +50,7 @@ print(o)
 
 # 3
 angka = [[1,2,3],[2,3,4],[3,4,5]]
+
 def perkalian(x, y, z):
     return x + y + z
 
